@@ -1,1 +1,1 @@
-# surr
+# Please visit my blog at www.surr.pro (planning to add short english version of my articles)

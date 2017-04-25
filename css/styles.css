@@ -1,6 +1,12 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
+
+/* 
+$d-grey: #5C7280;
+$m-grey: #F3F3F9;
+$blue: #354590; 
+*/
 
 form {
 	max-width: 500px;
@@ -56,13 +62,14 @@ input:focus, textarea:focus {
 }
 
 h1, h2, h3 {
-	font-family: 'Crimson Text', sans-serif;
+	font-family: 'Merriweather', serif;
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-bottom: 20px;
 }
 
 .navbar-brand {
+	font-family: 'Merriweather', serif;
 	font-weight: 800;
 	font-size: 1.5rem;
 	letter-spacing: 0.5px;
@@ -91,6 +98,15 @@ h1, h2, h3 {
 	max-height: 250px;
 	display: block;
 	object-fit: cover;
+	/* gray */	
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: url(../svg/grayscale.svg#greyscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
 }
 
 .project-img {
@@ -103,27 +119,28 @@ h1, h2, h3 {
 
 .hovereffect {
 	width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	background: #354590;
 }
 
 .hovereffect .overlay {
 	width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
 }
 
 .hovereffect .overlay-text {
 	font-size: 1.3rem;
-	font-family: 'Crimson Text', sans-serif;
+	font-family: 'Merriweather', serif;
 	font-weight: 300;
-	color: #000;
+	color: #fff;
 	left: 50%;
 	position: absolute;
 	top: 50%;
@@ -156,4 +173,107 @@ h1, h2, h3 {
 .hovereffect:hover img {
   opacity: 0;
   filter: alpha(opacity=0);
+}
+
+.post-logo {
+	margin: 40px auto;
+}
+
+@media (max-width: 992px) {
+	.post-logo {
+		width: auto;
+    	height: auto;
+	}
+
+}
+
+
+
+.v-info-wrap {
+	background: #F3F3F9;
+	padding: 30px 0;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.v-info-wrap:before {
+	content: '';
+    top: 0;
+    right: 0;
+    background: url(../svg/i-corner.svg) center 0 no-repeat;
+    background-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    -webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	transform: scaleY(-1);
+}
+.v-info-block__title {
+	font-size: 24px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+.v-info-block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.v-info-block__item {
+	width: 50%;
+    text-align: center;
+    padding: 60px 30px 0 30px;
+}
+.v-info-block__item:first-child {
+	border-right: 1px dotted #354590;
+}
+.v-info-block__item p {
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+.v-info-block__item p:last-child {
+	margin: 0;
+}
+.v-info-block__item .v-item__head {
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	color: #354590;
+}    
+.v-info-block__item.-pc {
+	background: url('../svg/i-pc.svg') center 0 no-repeat;
+	background-size: 50px;
+}
+.v-info-block__item.-mobile {
+	background: url('../svg/i-mobile.svg') center 0 no-repeat;
+	background-size: 50px;
+}
+.v-info-block__item.-pos {
+	background: url('../svg/i-positive.svg') center 0 no-repeat;
+	background-size: 50px;
+}
+.v-info-block__item.-neg {
+	background: url('../svg/i-warning.svg') center 0 no-repeat;
+	background-size: 50px;
+}
+
+.post-img {
+	width: 100%;
+}
+.-hl-link {
+	border-bottom: none !important;
+	padding: 2px 4px;
+    background: #354590;
+    color: #fff !important;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.-hl-link:hover {
+	background: #626da2;
 }
