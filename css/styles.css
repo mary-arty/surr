@@ -127,6 +127,18 @@ h1, h2, h3 {
 	background: #354590;
 }
 
+.hovereffect:after {
+	content: '';
+    bottom: 0;
+    right: 0;
+    background: url(../svg/i-corner.svg) center 0 no-repeat;
+    background-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+}
+
 .hovereffect .overlay {
 	width: 100%;
 	height: 100%;
@@ -265,6 +277,11 @@ h1, h2, h3 {
 .post-img {
 	width: 100%;
 }
+.post-img.-sm {
+	width: auto;
+    margin: 0 auto;
+    display: block;
+}
 .-hl-link {
 	border-bottom: none !important;
 	padding: 2px 4px;
@@ -276,4 +293,12 @@ h1, h2, h3 {
 
 .-hl-link:hover {
 	background: #626da2;
+}
+
+.post-date {
+	font-style: italic;
+	font-style: italic;
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    color: #5C7280;
 }
