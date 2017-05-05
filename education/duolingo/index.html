@@ -24,11 +24,11 @@
   
 
   <!-- Pure CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,14 +41,17 @@
   <body>
     
     <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    if (document.location.hostname == "surr.pro") { 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-97331224-1', 'auto');
-	  ga('send', 'pageview');
-
+		ga('create', 'UA-97331224-1', 'auto');
+		ga('send', 'pageview');
+    } else { 
+    	console.log('dev mode'); 
+    }
 	</script>
 
 
@@ -117,6 +120,14 @@
 <p><img class="post-img" src="/images/education-duolingo-learn-eng.jpg" alt="О сервисе Duolingo - интерфейс изучения английского языка - surr.pro"></p>
 <p>Модный, стильный, молодё.. У Дуолинго очень крутой интерфейс, от иконок тематик уроков и до иллюстраций с параллакс-анимацией на страницах - все очень интересно нарисовано, в едином гейм-стиле, который понравится и взрослому и ребенку. Расположение элементов предельно понятное, перегруженности какой-либо нет, блуждать в километровых страницах не приходится. Тексты и подсказки сбалансированно разбавлены яркой графикой. </p>
 <p>Только вспомните учебники по грамматике иностранного языка с морем незапоминающихся табличек, которые все как одна, и бесконечным курсивом. Только от воспоминания клонит в сон и теряется всякая мотивация. Пожалуй, только приятными визуальными раздражителями можно поддерживать в человеке какую-то искру. Что и делает дуолинго.</p>
+<h3>Совместное изучение иностранных в группе с преподавателем</h3>
+
+<p><img class="post-img" src="/images/education-duolingo-school.png" alt="О сервисе Duolingo - Как создать класс для совместного изучения иностранного языка - surr.pro"></p>
+<p>Потрясающая новость для преподавателей иностранных языков, теперь процесс обучения можно сделать менее тягостным и для студентов и для самого учителя. И поможет в этом отдельная расширенная возможность сервиса - классы дуолинго. </p>
+<p>Создать группу проще некуда - регистрируемся и на странице <a href="https://schools.duolingo.com" target="_blank" class="-hl-link">schools.duolingo.com</a> начинаем создавать <b>класс</b> (он же группа, в которую потом пригласим ученников, разослав им ссылку на вступление в класс). Студенты тоже должны быть зарегистрированы, и, если они сами не могут создать аккаунт, это тоже может сделать сам преподаватель, раздав потом доступы.</p>
+<p>Как только учащиеся будут добавлены, учитель сможет следить за процессом обучения каждого студента: сколько заданий было выполнено в срок, сколько задержано или пропущено. Программа, например, английского языка структурирована таким образом, чтобы быть масимально эффективной и быстрой. Но учитель может эту программу разбивать на части, чтобы перемежать с теорией, и соответственно менять порядок выдаваемых заданий. То есть, практика - дуолинго, теория - лекции.</p>
+<p>В разделе <b>учебный план</b>, доступный опять же для учителя, можно самостоятельно протестировать и пройти каждый урок. И, если он понравился, назначить как задание для группы, установив его дату и время сдачи.</p>
+<p>В нашей стране, скорее всего, по этой программе не работает ни один учитель (опять же, стандартизация, отрицающая любые инновации), но для дополнительных занятий или репетиторства очень полезный инструмент. И он полностью бесплатный, без рекламы.</p>
 <h3>Сертификат знания английского языка duolingo</h3>
 
 <p>Аттестаты 99% онлайн-школ и курсов, в принципе, можно получать “для себя” или для б’ольшей наполненности своего резюме. В случае, если нужен официальный сертификат для работы/учебы за границей, то обычно экзамен на знание языка нужно сдавать в организациях, выдающих международные сертификаты. Свидетельств существует несколько видов, например, один из самых популярных - IELTS (International English Language Testing System) - действует всего 2 года и стоит $200. Вы можете проходить тест хоть каждые 2 месяца (обычно это средний срок обработки и выдачи бумаги), но каждая попытка оплачивается отдельно. </p>
@@ -136,7 +147,6 @@
 
 <div id="disqus_thread" style="width: 100%"></div>
 <script>
-
 	(function() { // DON'T EDIT BELOW THIS LINE
 	var d = document, s = d.createElement('script');
 	s.src = 'https://surr-pro.disqus.com/embed.js';
@@ -151,7 +161,17 @@
   	</div>
 
     <!-- Footer block & scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <footer class="footer">
+	<div class="container-fluid m-sm-5">
+		<div class="row">
+			<p class="copyright">© <script>document.write(new Date().getFullYear())</script> surr.pro</p>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
