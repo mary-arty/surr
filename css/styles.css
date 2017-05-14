@@ -66,6 +66,7 @@ h1, h2, h3 {
 	letter-spacing: 1px;
 	font-weight: 300;
 	margin-bottom: 20px;
+	line-height: 1.3;
 }
 
 .navbar-brand {
@@ -95,9 +96,9 @@ h1, h2, h3 {
 
 .portfolio-img {
 	width: 100%;
-	max-height: 250px;
 	display: block;
-	object-fit: cover;
+	/* max-height: 250px;
+	object-fit: cover; */
 	/* gray */	
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
@@ -119,7 +120,8 @@ h1, h2, h3 {
 
 .hovereffect {
 	width: 100%;
-	height: 100%;
+	max-height: 250px;
+    height: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -172,10 +174,12 @@ h1, h2, h3 {
 }
 
 .hovereffect img {
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
   position: relative;
   max-width: none;
-  width: 100%;
+  width: 100%; */
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-backface-visibility: hidden;
@@ -305,18 +309,51 @@ h1, h2, h3 {
 
 
 .footer {
-	display: none;
-    background: #F3F3F9;
+    background: #354590;
     padding: 10px 0;
 }
 
 .copyright {
 	padding: 0;
     margin: 0 0 0 .75rem;
-    color: rgba(0,0,0,.5);
+    color: #fff;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 1.5px;
 }
 
+
+.post-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.-pre-list {
+	margin: 0;
+}
+.--mark {
+    list-style: none;
+    padding: 0 0 0 30px;
+}
+
+.--mark li {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.--mark li:before {
+    content:  "—";
+    position: absolute;
+    left: -20px;
+}
+
+.line {
+	border: 0;
+    height: 1px;
+    background: #F3F3F9;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
