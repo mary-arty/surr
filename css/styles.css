@@ -357,3 +357,9 @@ h1, h2, h3 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.surr-pro {
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0;
+}
