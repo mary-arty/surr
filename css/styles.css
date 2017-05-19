@@ -186,6 +186,11 @@ h1, h2, h3 {
   backface-visibility: hidden;
 }
 
+.hovereffect a {
+	display: block;
+	min-height: 150px;
+}
+
 .hovereffect:hover img {
   opacity: 0;
   filter: alpha(opacity=0);
