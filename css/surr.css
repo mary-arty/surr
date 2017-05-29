@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* 
+** scalable and modular architecture by smacss.com/book/categorizing 
+*/
+
+
+
+/* 
+** Base
+*/
+@import	url('base/bootstrap.min.css');
+@import	url('base/var.css');
+@import	url('base/list.css');
+@import	url('base/form-elements.scss');
+@import	url('base/info-block.css');
+@import	url('base/headlines.css');
+
+/* 
+** Layout
+*/
+@import	url('layout/index.css');
+@import url('layout/nav.css');
+@import url('layout/article.css');
+@import url('layout/footer.css');
+
+/* 
+** Modules
+@import url('module/module.css');
+*/
+
+/* 
+** States
+@import url('state/state.css');
+*/

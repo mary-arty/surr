@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* 
+** Inner article list 
+*/
+/* 
+** Simple text list
+*/
+.-pre-list {
+  margin: 0; }
+
+.--mark {
+  list-style: none;
+  padding: 0 0 0 30px; }
+
+.--mark li {
+  padding: 0;
+  margin: 0;
+  position: relative; }
+
+.--mark li:before {
+  content: "—";
+  position: absolute;
+  left: -20px; }

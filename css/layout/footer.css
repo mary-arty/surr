@@ -1,0 +1,46 @@
+/*
+** Footer
+*/
+.footer {
+  background: #354590;
+  padding: 10px 0; }
+
+.copyright {
+  padding: 0;
+  margin: 0 0 0 .75rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 1.5px; }
+
+.copyright:hover {
+  color: #F3F3F9;
+  text-decoration: none; }
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center; }
+
+.surr-social {
+  display: block;
+  margin: 0 .25rem 0 0; }
+
+.surr-social li {
+  display: inline-block;
+  width: 50px;
+  height: 50px; }
+
+.surr-social .-facebook,
+.surr-social .-google {
+  display: block;
+  width: 50px;
+  height: 50px; }
+
+.surr-social .-facebook {
+  background: url(../../svg/i-facebook.svg) center no-repeat;
+  background-size: 25px; }
+
+.surr-social .-google {
+  background: url(../../svg/i-google-plus.svg) center no-repeat;
+  background-size: 25px; }

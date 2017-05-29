@@ -1,0 +1,26 @@
+/*
+** Headlines
+*/
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.3; }
+
+/*
+** Index h1
+*/
+.surr-pro {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0; }
+
+/*
+** Article pre title
+*/
+.post-date {
+  font-weight: bold;
+  font-size: 13px;
+  color: #5C7280;
+  text-transform: uppercase; }
